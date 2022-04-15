@@ -1,0 +1,133 @@
+html {
+    min-width: 1080px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.62;
+    color: #4a4c4d;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#presentation-left, #presentation-right {
+    width: 15%;
+}
+
+#profile-picture {
+    width: 100%;
+    height: 100%;
+}
+
+#presentation-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1% 0;
+    border-top: solid lightgray thin;
+    border-bottom: solid lightgray thin;
+    padding: 0.5%;
+    background-color: white;
+}
+
+nav > a {
+    border-bottom: solid #07599b medium;
+    padding: 0.5%;
+    font-family: 'Century Gothic', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #f1f3f5;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-left, #main-right {
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+#main-center {
+    max-width:65%;
+}
+
+aside {
+    height: fit-content;
+    margin: 5%;
+    padding: 5%;
+    border-top: solid #07599b thick;
+    background-color: #f1f3f5;
+    font-size: smaller;
+}
+
+aside > h2 {
+    margin: auto 0;
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #07599b;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+section {
+    margin: 1%;
+    border: solid #07599b medium;
+    border-radius: 10px;
+    padding: 2%;
+    background-color:aliceblue;
+    scroll-margin-top: 2em;
+}
+
+section h2 {
+    text-align: center;
+}
+
+hr {
+    color: lightgray;
+}
+
+a {
+    color: #007cba;
+    text-decoration: none;
+}
+
+li {
+    margin: 20px 0;
+}
+
+li::marker {
+    color: #07599b;
+}
